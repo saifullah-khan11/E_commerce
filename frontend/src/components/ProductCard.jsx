@@ -50,7 +50,7 @@ const ProductCard = ({ product }) => {
         </p>
         
         <div className="product-footer">
-          <span className="product-price" data-testid="product-price">${product.price.toFixed(2)}</span>
+          <span className="product-price" data-testid="product-price">{formatPrice(product.price)}</span>
           <button
             onClick={handleAddToCart}
             disabled={product.stock === 0}
