@@ -315,10 +315,12 @@ metadata:
 
 test_plan:
   current_focus:
-    - "Verify backend server and all API endpoints"
-    - "Check frontend pages render correctly"
-    - "Test authentication flow"
-    - "Verify cart and checkout functionality"
+    - "Frontend UI testing in progress"
+    - "Test authentication flow (sign up/sign in)"
+    - "Verify product browsing and filtering"
+    - "Test cart functionality with rupee currency"
+    - "Verify checkout process"
+    - "Test responsive design"
   stuck_tasks: []
   test_all: false
   test_priority: "high_first"
