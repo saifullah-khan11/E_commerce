@@ -223,7 +223,7 @@ const Checkout = () => {
 
             <div className="summary-row">
               <span>Subtotal</span>
-              <span data-testid="checkout-subtotal">${subtotal.toFixed(2)}</span>
+              <span data-testid="checkout-subtotal">{formatPrice(subtotal)}</span>
             </div>
             
             <div className="summary-row">
@@ -235,7 +235,7 @@ const Checkout = () => {
             
             <div className="summary-row summary-total">
               <span>Total</span>
-              <span data-testid="checkout-total">${subtotal.toFixed(2)}</span>
+              <span data-testid="checkout-total">{formatPrice(subtotal)}</span>
             </div>
           </div>
         </div>
