@@ -214,7 +214,7 @@ const Checkout = () => {
                     <p className="item-name">{item.products?.name}</p>
                     <p className="item-quantity">Qty: {item.quantity}</p>
                   </div>
-                  <p className="item-price">${((item.products?.price || 0) * item.quantity).toFixed(2)}</p>
+                  <p className="item-price">{formatPrice((item.products?.price || 0) * item.quantity)}</p>
                 </div>
               ))}
             </div>
