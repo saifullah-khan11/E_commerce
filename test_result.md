@@ -314,3 +314,5 @@ test_plan:
 agent_communication:
   - agent: "main"
     message: "Initial setup complete. Backend dependencies installed, frontend dependencies installed, both services running. Ready for comprehensive testing."
+  - agent: "main"
+    message: "Currency modification complete. Changed all price displays from USD ($) to Indian Rupees (₹). Updated components: ProductCard, ProductDetail, Cart, Checkout, Orders. Created formatPrice utility function. Updated sample products in schema to use rupee values (converted approximately 1 USD = 83 INR). Ready for testing."
