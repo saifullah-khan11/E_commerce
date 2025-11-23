@@ -188,10 +188,10 @@ Vélora embodies premium luxury through:
 ## Customization
 
 ### Adding Products
-Run SQL in Supabase:
+Run SQL in Supabase (prices in Indian Rupees):
 ```sql
 INSERT INTO products (name, description, price, stock, image_url, category)
-VALUES ('Product Name', 'Description', 99.99, 10, 'image-url', 'Category');
+VALUES ('Product Name', 'Description', 8499.00, 10, 'image-url', 'Category');
 ```
 
 ### Changing Colors
