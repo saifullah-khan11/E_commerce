@@ -80,7 +80,7 @@ const ProductDetail = () => {
           <div className="product-info-section">
             <div className="product-category-badge" data-testid="product-category">{product.category}</div>
             <h1 className="product-detail-title" data-testid="product-title">{product.name}</h1>
-            <div className="product-price-large" data-testid="product-price">${product.price.toFixed(2)}</div>
+            <div className="product-price-large" data-testid="product-price">{formatPrice(product.price)}</div>
             
             <div className="product-stock" data-testid="product-stock">
               {product.stock > 0 ? (
