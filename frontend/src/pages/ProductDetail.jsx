@@ -5,6 +5,7 @@ import { ShoppingCart, ArrowLeft, Check } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { useCart } from '../contexts/CartContext'
 import { toast } from 'sonner'
+import { formatPrice } from '../lib/utils'
 
 const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api`
 
