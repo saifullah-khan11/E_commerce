@@ -68,7 +68,7 @@ const Orders = () => {
                   </div>
                 </div>
                 <div className="order-total" data-testid={`order-total-${order.id}`}>
-                  Total: ${order.total_amount?.toFixed(2)}
+                  Total: {formatPrice(order.total_amount)}
                 </div>
               </div>
             ))}
