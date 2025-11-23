@@ -126,7 +126,7 @@ const Cart = () => {
             
             <div className="summary-row">
               <span>Subtotal</span>
-              <span data-testid="cart-subtotal">${subtotal.toFixed(2)}</span>
+              <span data-testid="cart-subtotal">{formatPrice(subtotal)}</span>
             </div>
             
             <div className="summary-row">
@@ -138,7 +138,7 @@ const Cart = () => {
             
             <div className="summary-row summary-total">
               <span>Total</span>
-              <span data-testid="cart-total">${subtotal.toFixed(2)}</span>
+              <span data-testid="cart-total">{formatPrice(subtotal)}</span>
             </div>
 
             <button
