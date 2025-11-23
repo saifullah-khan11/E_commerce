@@ -5,6 +5,7 @@ import { useAuth } from '../contexts/AuthContext'
 import axios from 'axios'
 import { toast } from 'sonner'
 import { CreditCard, Lock } from 'lucide-react'
+import { formatPrice } from '../lib/utils'
 
 const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api`
 
