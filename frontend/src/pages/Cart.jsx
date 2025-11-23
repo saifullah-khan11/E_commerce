@@ -86,7 +86,7 @@ const Cart = () => {
                 <div className="cart-item-details">
                   <h3 className="cart-item-name" data-testid="cart-item-name">{item.products?.name}</h3>
                   <p className="cart-item-category" data-testid="cart-item-category">{item.products?.category}</p>
-                  <p className="cart-item-price" data-testid="cart-item-price">${item.products?.price?.toFixed(2)}</p>
+                  <p className="cart-item-price" data-testid="cart-item-price">{formatPrice(item.products?.price)}</p>
                 </div>
 
                 <div className="cart-item-actions">
