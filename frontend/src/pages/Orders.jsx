@@ -3,6 +3,7 @@ import { useNavigate } from 'react-router-dom'
 import { useAuth } from '../contexts/AuthContext'
 import axios from 'axios'
 import { Package, Calendar } from 'lucide-react'
+import { formatPrice } from '../lib/utils'
 
 const API_URL = `${process.env.REACT_APP_BACKEND_URL}/api`
 
