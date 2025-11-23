@@ -4,6 +4,7 @@ import { ShoppingCart } from 'lucide-react'
 import { useAuth } from '../contexts/AuthContext'
 import { useCart } from '../contexts/CartContext'
 import { toast } from 'sonner'
+import { formatPrice } from '../lib/utils'
 
 const ProductCard = ({ product }) => {
   const { user } = useAuth()
