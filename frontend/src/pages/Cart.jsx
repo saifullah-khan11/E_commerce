@@ -4,6 +4,7 @@ import { Trash2, ShoppingBag, ArrowRight } from 'lucide-react'
 import { useCart } from '../contexts/CartContext'
 import { useAuth } from '../contexts/AuthContext'
 import { toast } from 'sonner'
+import { formatPrice } from '../lib/utils'
 
 const Cart = () => {
   const { cartItems, updateCartItem, removeFromCart } = useCart()
